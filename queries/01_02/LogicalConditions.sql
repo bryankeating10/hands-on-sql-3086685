@@ -14,3 +14,8 @@ WHERE deptno NOT IN(30,40);
 
 SELECT * FROM emp_tab
 WHERE NOT(NOT(deptno > 35))
+
+SELECT name 'Name', CONCAT('$', salary*12) 'Salary' FROM emp_tab
+WHERE salary*12 < 50000
+
+-- SELECT CONCAT('$', FORMAT(salary, 2)) 'Salary' FROM emp_tab;
