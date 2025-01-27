@@ -12,10 +12,12 @@ SELECT name 'Name',job 'Job',salary 'Salary',
   CASE 
     WHEN job='MANAGER' THEN 'Selected Manager'
     ELSE 'Unselected'
-  END 'Revised Salary',
+  END 'Revised_Salary',
   CASE
     WHEN salary >= 3000 THEN 'High'
     WHEN salary <= 1300 THEN 'Low'
     ELSE 'Middle'
   END 'Classification'
-FROM emp_tab;
+  -- ORDER BY salary
+FROM emp_tab
+ORDER BY Revised_Salary,Classification DESC;
