@@ -1,1 +1,2 @@
-SELECT ROUND(92.427,2) 'Rounded';
+SELECT CONCAT('$',ROUND(92.427,2)) 'Rounded';
+-- Test comment
